@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "umbrasonsservertweaks",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Umbrasons server tweaks",
+  "description": "Adds various server sided tweaks & features!\nDisables those nasty cooldowns on goat horns",
+
   "authors": [
-    "Me!"
+    "Umbrason"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -14,16 +15,18 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/umbrasonsservertweaks/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.umbrason.umbrasonsservertweaks.UmbrasonsServerTweaksMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "umbrasonsservertweaks.mixins.json",
+    "umbrasonsservertweaks.dispenseroverhauls.mixins.json",
+    "umbrasonsservertweaks.shulkerenchants.mixins.json"
   ],
 
   "depends": {

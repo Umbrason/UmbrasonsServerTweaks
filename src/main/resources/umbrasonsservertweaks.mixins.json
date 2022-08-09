@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.umbrason.umbrasonsservertweaks.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "RecoveryCompassMixin",
+    "GoatHornMixin"
+  ],
+  "client": [
+  ],
+  "server": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
